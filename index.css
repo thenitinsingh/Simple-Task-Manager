@@ -1,0 +1,143 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F7FA ;
+    overflow: scroll;
+}
+h1{
+    text-align: center;
+    color: rgb(44, 14, 70);
+}
+input[type=button]{
+    background-color: #e1e8f2 ;
+    border:none;
+    border-radius: 5px;
+    height: 35px;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.allbutton{
+    width: 70px;
+}
+.activebutton{
+    width: 70px;
+}
+.completedbutton{
+    width: 90px;
+}
+#text,#description,.dropbox{
+    width: 550px;
+    margin:10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#text{
+    height: 30px;
+}
+#description{
+    height: 100px;
+}
+.dropbox{
+    height: 50px;
+}
+.add-task{
+    width: 580px;
+    height: 50px;
+    background-color:#22c55e ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;  
+    font-weight: bold;  
+    cursor: pointer; 
+    transition: background-color 0.3s ease;  
+    margin: 10px;
+}
+.add-task:hover{
+    background-color: #16a34a;
+}
+.heading {
+    display: grid;
+    place-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 50%;
+    height: 350px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%, -50%);
+}
+.buttons{
+    margin-top: 50px !important;
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin: auto;
+}
+input[type=button]:hover{
+    background-color: #c0cbdb;
+}
+table{
+    margin-top: 480px;
+    margin-left: 375px;
+    width: 50%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    visibility: hidden;   
+}
+table th {
+    background-color: #058c69; 
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+}
+table tr {
+    border-bottom: 1px solid #ddd; 
+}
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+table tr:hover {
+    background-color: #e0e0e0; 
+}
+td {
+    padding: 12px;
+    font-size: 16px;
+}
+.icon-button {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.checkbox {
+    width: 15px;
+    height: 15px;
+    appearance: none; 
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox:checked {
+    background-color: #1e77ea;
+    border-color: #5691df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox:checked::after {
+    content: "✔";
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
